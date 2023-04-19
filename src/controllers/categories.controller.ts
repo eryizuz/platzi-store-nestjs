@@ -22,6 +22,7 @@ export class CategoriesController {
   getOne(@Param('categoryId', ParseIntPipe) categoryId: number): Category {
     return this.categoryService.findOne(categoryId);
   }
+  
 
   @Get('/')
   @HttpCode(HttpStatus.ACCEPTED)
